@@ -1,3 +1,4 @@
+
 Feature: Wrong Login
   when am in the login page
   i should want
@@ -7,5 +8,5 @@ Feature: Wrong Login
     And I fill in "email" with "stephangirls@gmail.com"
     And I fill in "password" with "123"
     And I click "Login" button
-    Then I should see "Wrong credentials"
+    Then I should see "Wrong credentials "
 

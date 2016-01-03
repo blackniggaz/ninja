@@ -4,13 +4,16 @@ class LoginController < ApplicationController
     render('login/index')
   end
   def auth
-puts params[:user]
+
     @user=User.find_by(params[:user])
     if(@user.nil?)
-      render('login/forgot')
+       render('login/forgot')
     else
+      session[:username] = @user.username
+      session[:id] = @user.id
 
-      redirect_to users_path
+      flash[:notice] = "#{@user.username} has logged in."
+      redirect_to mydata_index_path
     end
   end
 end

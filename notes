@@ -1,0 +1,6 @@
+in order to create a controller with just a view without model
+
+rails g controller Controller_Name view_name
+
+
+

@@ -1,0 +1,28 @@
+<% @page_title = "Sign Up Page" %>
+<div class="Login_Form">
+  <h1>Sign Up</h1>
+
+  <%= form_for(:user, :url => {:controller => 'users', :action => 'create2'}) do |f| %>
+
+      <div class="field">
+        <%= f.label :username %><br>
+        <%= f.text_field :username %>
+      </div>
+      <div class="field">
+        <%= f.label :email %><br>
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :password %><br>
+        <%= f.text_field :password %>
+      </div>
+      <div class="field">
+        <%= f.label :description %><br>
+        <%= f.text_area :description %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+  <% end %>
+
+</div>
