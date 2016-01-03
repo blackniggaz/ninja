@@ -54,7 +54,7 @@ class UsersController < ApplicationController
       if @user.save
          redirect_to login_index_path
 
-     
+
     end
   end
   # PATCH/PUT /users/1
