@@ -4,6 +4,12 @@
 %>
 </h1>
 
+<h2><%=
+    flash[:data]
+
+%>
+</h2>
+
 <p>This is my page and here is the  value of my session  is   <%=  session[:id]   %> </p>
 
 <%= form_for(:user, :url => {:controller => 'users', :action => 'delete'}) do |f| %>

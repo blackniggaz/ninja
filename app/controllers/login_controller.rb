@@ -13,6 +13,7 @@ class LoginController < ApplicationController
       session[:id] = @user.id
 
       flash[:notice] = "#{@user.username} has logged in."
+      flash[:data] = "#{@user.email}"
       redirect_to mydata_index_path
     end
   end
