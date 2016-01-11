@@ -63,6 +63,6 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   #gem 'rspec-autotest'
   gem "webmock"
-
+  gem "haml"
 end
 

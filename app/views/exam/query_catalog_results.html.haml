@@ -1,0 +1,16 @@
+%h2 List of available plants
+
+%table#plants
+  %thead
+    %tr
+      %th Name
+      %th Description
+      %th Price
+      %th Action
+  %tbody
+    - @plants.each do |plant|
+      %tr
+        %td= plant.name
+        %td= plant.description
+        %td= plant.price
+        %td= link_to "Select", purchase_orders_path(plant: plant, start_date: @start_date, end_date: @end_date), method: :post

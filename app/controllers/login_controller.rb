@@ -17,4 +17,9 @@ class LoginController < ApplicationController
       redirect_to mydata_index_path
     end
   end
+
+  def  test
+
+    puts params
+  end
 end

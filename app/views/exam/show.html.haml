@@ -1,0 +1,18 @@
+%h2 Details of purchase order (plant rental)
+
+%ul
+  %li
+    Plant name:
+    = @plant[:name]
+  %li
+    Plant description:
+    = @plant[:description]
+  %li
+    Rental start date:
+    = @po[:start_date]
+  %li
+    Rental end date:
+    = @po[:end_date]
+  %li
+    Rental cost:
+    = @po[:cost]

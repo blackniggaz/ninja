@@ -37,7 +37,7 @@ end
 Then(/^i shouldnt  see "(.*?)"$/) do |arg1|
 
  @users.find_each do |user|
-  
+
  end
 
 page.has_no_xpath?('//td', :text =>arg1)

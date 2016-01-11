@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :plants
+  resources :purchase_orders
   get 'mydata/index'
 
   get 'sessions/new'
@@ -10,6 +12,7 @@ Rails.application.routes.draw do
 
 
   post 'login/auth', :to => 'login#auth'
+  post 'login/test', :to => 'login#test'
   get 'login/index'
   resource :session
   resource :mydata
